@@ -1,0 +1,92 @@
+HTML, body {
+    height: 100%;
+    line-height:25px;
+    background:lightgray;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    text-align: right;
+}
+
+p {
+    padding:0px 5px;
+}
+
+.navbar {
+    padding:15px;
+    background:#23B0A8;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+
+}
+
+.navbar-link {
+    margin: 0 5px;
+    color:white;
+    text-decoration: none;
+    padding:8px;
+    border:2px solid white;
+}
+
+.navbar-link:hover {
+    margin: 0 5px;
+    color:white;
+    text-decoration: none;
+}
+
+.header {
+    /*vh means viewport height
+      so its 50% of the screen height :) */
+    height:100vh;
+    /*keeps items vertically aligned*/
+    -webkit-align-items: center;    
+    -ms-flex-align: center;    
+    align-items: center;    
+    display: -webkit-flex;    
+    display: flex; 
+
+    text-align:center;
+    background: url("../../src/images/mountains.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:bottom;
+    margin-bottom:40px;
+}
+
+.header-title {
+    font-size:4em;
+    color:white;
+}
+
+.blog {
+    margin: 0px auto;
+    max-width:700px;
+    padding:50px;
+    background:white;
+}
+
+.blog-title {
+    margin: 50px 0px;
+}
+
+.blog-subtitle {
+    margin:30px 0px;
+}
+
+.footer {
+    color:white;
+    background:#333;
+    padding:50px 20px;
+    /*position: fixed;
+    left:0px;
+    right:0px;
+    bottom:0px;*/
+
+}
