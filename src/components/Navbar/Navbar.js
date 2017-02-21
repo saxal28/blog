@@ -1,18 +1,11 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Navbar = (props) => {
     return (
         <div className="navbar">
             <span className="pull-left">
-                <a href="#" className="navbar-link">
-                <span>Link 3</span>
-                </a>     
-                <a href="#" className="navbar-link">
-                    <span>Link 3</span>
-                </a>
-                <a href="#" className="navbar-link">
-                    <span>Link 3</span>
-                </a>
+                <Link to="/" className="navbar-link">Home</Link>   
             </span>            
         </div>
     )

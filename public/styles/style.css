@@ -9,10 +9,6 @@ h1 {
     text-align: center;
 }
 
-h3 {
-    text-align: right;
-}
-
 p {
     padding:0px 5px;
 }
@@ -44,7 +40,7 @@ p {
 .header {
     /*vh means viewport height
       so its 50% of the screen height :) */
-    height:100vh;
+    height:60vh;
     /*keeps items vertically aligned*/
     -webkit-align-items: center;    
     -ms-flex-align: center;    
@@ -54,10 +50,12 @@ p {
 
     text-align:center;
     background: url("../../src/images/mountains.jpg");
+    /*background:url("http://i.imgur.com/67v96aC.jpg");*/
     background-size:cover;
     background-attachment:fixed;
     background-position:bottom;
     margin-bottom:40px;
+    box-shadow: 0px 5px 15px gray;
 }
 
 .header-title {
@@ -70,14 +68,46 @@ p {
     max-width:700px;
     padding:50px;
     background:white;
+    box-shadow: 0px 5px 15px gray;
+}
+
+.blog-preview {
+    margin: 30px auto;
+        box-shadow: 0px 5px 15px gray;
 }
 
 .blog-title {
-    margin: 50px 0px;
+    margin: 50px 0px 0px 0px;
 }
 
 .blog-subtitle {
-    margin:30px 0px;
+    font-size:1.6em;
+    color:gray;
+    margin:24px 0px;
+    text-align: center;
+}
+
+.blog-button {
+    padding:10px;
+    color:red;
+    background:none;
+    border: 3px solid red;
+    font-size:1.4em;
+    font-weight:bold;
+    width:80%;
+    margin: 0 auto;
+    transition:all 400ms;
+}
+
+.blog-button:hover {
+    color:white;
+    background:red;
+    box-shadow: 0px 5px 15px gray;
+}
+
+.inverted-button {
+    background:red;
+    color:white;
 }
 
 .footer {
@@ -89,4 +119,21 @@ p {
     right:0px;
     bottom:0px;*/
 
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 1024px) {
+    .header {
+        height:100vh;
+    }
+    .blog-body {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .blog { 
+        padding: 50px 20px;
+    }
 }
