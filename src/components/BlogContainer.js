@@ -18,11 +18,10 @@ class BlogContainer extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="blog-container">
       {/*this just makes sure everything is loaded properly before rendering*/}
       {this.state.blogs ? 
         <div>
-          <Header title="Header Title" subtitle="Header Subtitle" />
           {this.state.blogs.map((blog, index) => {
             return <BlogPreview 
               key={index}
@@ -34,7 +33,6 @@ class BlogContainer extends Component {
               date={blog.date} />
 
           })}
-          <Footer />
         </div> : "....Fetching Blogs...."}
 
       </div>

@@ -22,14 +22,10 @@ export default class ViewBlogContainer extends Component {
         return (
             <div>
                 {this.state.blog ? 
-                    <div>
-                        <Header 
-                            title={this.state.blog.title}
-                            subtitle={this.state.blog.subtitle}
-                            />
+                    <div className="blog-container">
                         <Blog
-                            title=""
-                            subtitle=""
+                            title={this.state.blog.title}
+                            subtitle={this.state.blog.title}
                             body={this.state.blog.body}
                             date={this.state.blog.date}
                             commentsEnabled={true}
