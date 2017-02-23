@@ -41,7 +41,10 @@ export default class AddBlog extends Component {
                     <h2>Body</h2>
                         <textarea></textarea>
                     <div style={{marginTop:30}}>
-                        <button className="blog-button" onClick={this.handleSubmit.bind(this)}>Submit</button>
+                        <button 
+                        className="blog-button" 
+                        style={{width:"100%"}}
+                        onClick={this.handleSubmit.bind(this)}>Submit</button>
                     </div>
              </div>
         )

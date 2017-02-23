@@ -137,15 +137,16 @@ p {
     color:white;
 }
 
-input[type=text], textarea {
+input[type=text], textarea, input[type=password] {
     font-size:2em;
-    color:gray
+    color:gray;
+    width:100%;
 }
 
 textarea {
     min-height:300px;
-    width:80%;
-    max-width:80%;
+    width:100%;
+    max-width:100%;
 }
 
 .footer {
@@ -170,20 +171,28 @@ a, a:hover {
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 1024px) {
+
     .header {
-        height:100vh;
+        height:40vh;
+        display:none;
+        
     }
     .blog-body {
         font-size: 20px;
         line-height: 1.5;
     }
 
+    .hide-on-mobile {
+        display: none;
+    }
+
     .blog { 
         padding: 50px 20px;
+        max-width: 768px;
     }
 
     .blog-preview {
-        margin:0px;
+        margin:0px auto;
     }
 
     .blog-container {

@@ -3,12 +3,14 @@ import App from "./components/App";
 import BlogContainer from "./components/BlogContainer";
 import ViewBlogContainer from "./components/ViewBlogContainer";
 import AddBlog from "./components/Admin/AddBlog";
+import Admin from "./components/Admin/Admin";
 import React from "react";
 
 export default (
     <Route path="/" component={App}>
         <IndexRoute component={BlogContainer} />
-        <Route path="/add" component={AddBlog} />
+        <Route path="/admin" component={Admin} />
+        <Route path="/admin/add" component={AddBlog} />
         <Route path="/:id" component={ViewBlogContainer} />
     </Route>
 )
