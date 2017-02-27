@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 const Header = (props) => {
     return (
         <div>
-            <Navbar  className="hide-on-mobile"/>
+         
             <div className="header text-center">
                 <div style={{margin:"0 auto", textAlign:"center"}} className="text-center">
                     <h1 className="header-title">{props.title}</h1>

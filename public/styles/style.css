@@ -1,8 +1,8 @@
 HTML, body {
     height: 100%;
     line-height:25px;
-    background:lightgray;
     font-family: Raleway;
+    background:lightgray;
 }
 
 h1 {
@@ -16,7 +16,7 @@ p {
 
 .navbar {
     padding:15px;
-    /*background:#23B0A8;*/
+    /*background:#23B0A8;backgroundbackground*/
     position:fixed;
     top:0px;
     left:0px;
@@ -170,10 +170,9 @@ a, a:hover {
 
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 1024px) {
+and (max-device-width : 1023px) {
 
     .header {
-        height:40vh;
         display:none;
         
     }
@@ -198,4 +197,15 @@ and (max-device-width : 1024px) {
     .blog-container {
     height: auto;
     }
+}
+
+/*ipad screen*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    .blog {
+        padding: 50px 15%;
+    }
+
 }
